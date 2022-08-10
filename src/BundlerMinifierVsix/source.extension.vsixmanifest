@@ -4,9 +4,9 @@
         <Identity Id="5783ce1f-b23d-4e84-87a4-6b2cbe9e0602" Version="2.9.3" Language="en-US" Publisher="Jason Moore" />
         <DisplayName>Bundler &amp; Minifier 2022+</DisplayName>
         <Description xml:space="preserve">Adds support for bundling and minifying JavaScript, CSS and HTML files in any project.</Description>
-        <MoreInfo>https://github.com/failwyn/BundlerMinifier</MoreInfo>
+        <MoreInfo>https://github.com/salarcode/BundlerMinifierPlus</MoreInfo>
         <License>Resources\LICENSE</License>
-        <ReleaseNotes>https://github.com/failwyn/BundlerMinifier/blob/master/CHANGELOG.md</ReleaseNotes>
+        <ReleaseNotes>https://github.com/salarcode/BundlerMinifierPlus/blob/master/CHANGELOG.md</ReleaseNotes>
         <Icon>Resources\icon.png</Icon>
         <PreviewImage>Resources\preview.png</PreviewImage>
         <Tags>bundle, bundling, minify, minification, js, css, html</Tags>

@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
     
-    <Authors>Gérald Barré, Mads Kristensen, RockstarDev</Authors>
+    <Authors>Gérald Barré, Mads Kristensen, RockstarDev, salar2k</Authors>
     <Product>Bundler &amp; Minifier TagHelpers</Product>
-    <PackageLicenseUrl>https://github.com/madskristensen/BundlerMinifier/blob/master/LICENSE</PackageLicenseUrl>
-    <Copyright>Copyright © 2018</Copyright>
+    <PackageLicenseUrl>https://github.com/salarcode/BundlerMinifierPlus/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright 2022</Copyright>
     <PackageIconUrl>https://raw.githubusercontent.com/madskristensen/BundlerMinifier/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
-    <RepositoryUrl>https://github.com/madskristensen/BundlerMinifier</RepositoryUrl>
+    <RepositoryUrl>https://github.com/salarcode/BundlerMinifierPlus</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>concat;bundle;minify;minification;css;js;html;aspnet;netcore</PackageTags>
     <!-- forces SDK to copy dependencies into build output to make packing easier -->
@@ -16,6 +16,10 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AssemblyVersion>5.2</AssemblyVersion>
+    <FileVersion>5.2</FileVersion>
+    <Version>5.2</Version>
+    <PackageId>BundlerMinifierPlus.TagHelpers</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

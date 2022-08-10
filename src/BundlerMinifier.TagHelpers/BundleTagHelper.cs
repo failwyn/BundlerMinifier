@@ -54,6 +54,9 @@ namespace BundlerMinifier.TagHelpers
         [HtmlAttributeName("name")]
         public string BundleName { get; set; }
 
+        [HtmlAttributeName("type")]
+        public string ScriptType {get; set;} = "text/javascript";
+
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.SuppressOutput();
@@ -74,7 +77,7 @@ namespace BundlerMinifier.TagHelpers
 
                     if (bundle.OutputFileUrl.EndsWith(".js", StringComparison.OrdinalIgnoreCase))
                     {
-                        output.Content.AppendHtmlLine($"<script src=\"{_htmlEncoder.Encode(src)}\" type=\"text/javascript\"></script>");
+                        output.Content.AppendHtmlLine($"<script src=\"{_htmlEncoder.Encode(src)}\" type=\"{ScriptType}\"></script>");
                     }
                     else if (bundle.OutputFileUrl.EndsWith(".css", StringComparison.OrdinalIgnoreCase))
                     {

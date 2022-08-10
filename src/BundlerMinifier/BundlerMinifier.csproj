@@ -3,9 +3,9 @@
   <Import Project="..\common.props" />
 
   <PropertyGroup>
-    <TargetFrameworks>net46;netstandard1.3;netcoreapp2.0;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net46;netstandard2.0;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
     <Title>Bundler &amp; Minifier</Title>
-    <PackageId>BuildBundlerMinifier</PackageId>
+    <PackageId>BuildBundlerMinifierPlus</PackageId>
 
     <BuildOutputTargetFolder>tools</BuildOutputTargetFolder>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -13,12 +13,17 @@
     <!-- forces SDK to copy dependencies into build output to make packing easier -->
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <PackageIconUrl>https://raw.githubusercontent.com/madskristensen/BundlerMinifier/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
-    <PackageLicenseUrl>https://github.com/madskristensen/BundlerMinifier/blob/master/LICENSE</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/failwyn/BundlerMinifier</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/salarcode/BundlerMinifierPlus/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/salarcode/BundlerMinifierPlus</RepositoryUrl>
     <PackageTags>concat;bundle;minify;minification;css;js;html</PackageTags>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Authors>Mads Kristensen, salar2k</Authors>
+    <Copyright>Copyright 2022</Copyright>
+    <AssemblyVersion>5.2</AssemblyVersion>
+    <FileVersion>5.2</FileVersion>
+    <Version>5.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,10 +32,10 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Build.Framework" Version="15.1.0-*" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.0-*" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Build.Framework" Version="15.9.20" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.9.20" PrivateAssets="All" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" PrivateAssets="All" />
-    <PackageReference Include="NUglify" Version="1.17.10" PrivateAssets="All" />
+    <PackageReference Include="NUglify" Version="1.20.2" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">

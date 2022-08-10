@@ -3,16 +3,19 @@
   <Import Project="..\common.props" />
 
   <PropertyGroup>
-    <Version>1.0.0</Version>
-    <TargetFrameworks>netcoreapp1.0;net452;netcoreapp2.0;netstandard2.0;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net46;netstandard2.0;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
     <DefineConstants>$(DefineConstants);DOTNET</DefineConstants>
-    <AssemblyName>dotnet-bundle</AssemblyName>
+    <Authors>Mads Kristensen, salar2k</Authors>
     <OutputType>Exe</OutputType>
-    <PackageId>BundlerMinifier.Core</PackageId>
+    <PackageId>BundlerMinifierPlus.Core</PackageId>
+    <RepositoryUrl>https://github.com/salarcode/BundlerMinifierPlus</RepositoryUrl>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AssemblyVersion>5.2</AssemblyVersion>
+    <FileVersion>5.2</FileVersion>
+    <Version>5.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUglify" Version="1.17.10" />
+    <PackageReference Include="NUglify" Version="1.20.2" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
 

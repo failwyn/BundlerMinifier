@@ -109,7 +109,7 @@ namespace BundlerMinifierTest
 
             // CSS
             string cssResult = File.ReadAllText(new FileInfo("../../../artifacts/foo.min.css").FullName);
-            Assert.AreEqual("body{background:url('/test.png')}body{display:block}body{background:url(test2/image.png?foo=hat)}", cssResult);
+            Assert.AreEqual("body{background:url('/test.png')}body{display:block}:root{--bb-width-test:}body{background:url(test2/image.png?foo=hat)}", cssResult);
 
             // HTML
             string htmlResult = File.ReadAllText("../../../artifacts/foo.min.html");

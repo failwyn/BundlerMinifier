@@ -199,24 +199,24 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.SDK">
-      <Version>17.0.0-previews-3-31605-261</Version>
+      <Version>17.2.32505.173</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Utilities">
-      <Version>17.0.0-previews-3-31605-261</Version>
+      <Version>17.2.32505.113</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VSSDK.BuildTools">
-      <Version>17.0.4183-preview4</Version>
+      <Version>17.2.2195</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
-      <Version>9.0.1</Version>
+      <Version>13.0.1</Version>
     </PackageReference>
     <PackageReference Include="NuGet.VisualStudio">
-      <Version>3.5.0</Version>
+      <Version>17.2.1</Version>
     </PackageReference>
     <PackageReference Include="NUglify">
-      <Version>1.17.10</Version>
+      <Version>1.20.2</Version>
     </PackageReference>
   </ItemGroup>
   <!-- end workaround -->

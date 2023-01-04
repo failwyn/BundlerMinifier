@@ -213,6 +213,17 @@ namespace BundlerMinifierTest
         }
 
         [TestMethod]
+        public void SupportVueShorthandEventSyntax()
+        {
+            //https://vuejs.org/guide/essentials/template-syntax.html#arguments
+            _processor.Process(TEST_BUNDLE.Replace("test1", "test10"));
+
+            string jsResult = File.ReadAllText("../../../artifacts/test10.min.html");
+
+            Assert.AreEqual("<v-autocomplete ref=\"peopleSearch\" clearable :items=\"peopleSearch_Items\" :loading=\"peopleSearch_Loading\" :label=\"peopleSearch_Label\" :no-data-text=\"peopleSearch_NoData\" v-model=\"peopleSearch\" v-model:search=\"peopleSearch_Search\" item-title=\"text\" item-value=\"id\" variant=\"underlined\" placeholder=\"Digite para pesquisar\" @keydown.enter=\"peopleSearch_EnterPressed(this, peopleSearch_Items[0])\" return-object></v-autocomplete>", jsResult);
+        }
+
+        [TestMethod]
         public void SupportDoubleAsteriskOperator()
         {
             _processor.Process(TEST_BUNDLE.Replace("test1", "test9"));

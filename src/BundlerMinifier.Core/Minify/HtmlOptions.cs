@@ -16,7 +16,7 @@ namespace BundlerMinifier
                 MinifyCssAttributes = GetValue(bundle, "minifyInlineCssCode", false) == "True",
                 AttributesCaseSensitive = GetValue(bundle, "preserveCase") == "True",
                 RemoveComments = GetValue(bundle, "removeHtmlComments", true) == "True",
-                RemoveQuotedAttributes = GetValue(bundle, "removeQuotedAttributes", true) == "True",
+                RemoveAttributeQuotes = GetValue(bundle, "removeAttributeQuotes", true) == "True",
                 CollapseWhitespaces = GetValue(bundle, "collapseWhitespace", true) == "True",
                 IsFragmentOnly = GetValue(bundle, "isFragmentOnly", true) == "True",
                 KeepOneSpaceWhenCollapsing = GetValue(bundle, "keepOneSpaceWhenCollapsing", false) == "True",

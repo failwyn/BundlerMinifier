@@ -1,40 +1,39 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\common.props" />
 
   <PropertyGroup>
-    <TargetFrameworks>net46;netstandard1.3;netcoreapp2.0;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net48;netstandard2.0;netcoreapp3.1</TargetFrameworks>
     <Title>Bundler &amp; Minifier</Title>
-    <PackageId>BuildBundlerMinifier</PackageId>
+    <PackageId>BuildBundlerMinifier2022</PackageId>
 
     <BuildOutputTargetFolder>tools</BuildOutputTargetFolder>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <!-- forces SDK to copy dependencies into build output to make packing easier -->
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    <PackageIconUrl>https://raw.githubusercontent.com/madskristensen/BundlerMinifier/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
-    <PackageLicenseUrl>https://github.com/madskristensen/BundlerMinifier/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/failwyn/BundlerMinifier/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/failwyn/BundlerMinifier/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/failwyn/BundlerMinifier</RepositoryUrl>
     <PackageTags>concat;bundle;minify;minification;css;js;html</PackageTags>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Mads Kristensen, Jason Moore</Authors>
+    <Version>2.9.6</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Build.Framework" Version="15.1.0-*" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.0-*" PrivateAssets="All" />
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" PrivateAssets="All" />
-    <PackageReference Include="NUglify" Version="1.17.10" PrivateAssets="All" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">
-    <PackageReference Include="System.IO.FileSystem.Watcher" Version="4.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Build.Framework" Version="17.4.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.4.0" PrivateAssets="All" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" PrivateAssets="All" />
+    <PackageReference Include="NUglify" Version="1.20.5" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>

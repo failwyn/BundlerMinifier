@@ -4,7 +4,7 @@ A Visual Studio extension that let's you configure bundling and
 minification of JS, CSS and HTML files.
 
 Download the extension at the
-[VS Gallery](https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40)
+[VS Gallery](https://marketplace.visualstudio.com/items?itemName=Failwyn.BundlerMinifier64)
 
 ---------------------------------------
 

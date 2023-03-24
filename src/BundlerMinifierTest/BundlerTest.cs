@@ -182,7 +182,7 @@ namespace BundlerMinifierTest
             _processor.Process(TEST_BUNDLE.Replace("test1", "test6"));
 
             string htmlResult = File.ReadAllText("../../../artifacts/file4.min.html");
-            Assert.AreEqual("<div class=\"bold\"><span><i class=\"fa fa-phone\"></i></span> <span>DEF</span></div>", htmlResult);
+            Assert.AreEqual("<div class=\"bold old\"><span><i class=\"fa fa-phone\"></i></span> <span>DEF</span></div>", htmlResult);
         }
 
         [TestMethod]

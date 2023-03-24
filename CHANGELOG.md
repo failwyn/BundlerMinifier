@@ -8,6 +8,10 @@
 
 These are the changes to each version that has been released
 on the official Visual Studio extension gallery
+## 2.9.6
+
+- [x] added support for arm64
+- [x] updated nuget packages
 
 ## 2.4
 

@@ -21,7 +21,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Mads Kristensen, Jason Moore</Authors>
-    <Version>2.9.8</Version>
+    <Version>2.9.9</Version>
   </PropertyGroup>
 
   <ItemGroup>

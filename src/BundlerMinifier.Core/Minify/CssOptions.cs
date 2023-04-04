@@ -42,7 +42,13 @@ namespace BundlerMinifier
             else if (outputMode == "none")
                 settings.OutputMode = OutputMode.None;
 
-            settings.Indent = GetValue(bundle, "indentSize", "2");
+            var indent = GetValue(bundle, "indent", string.Empty);
+            var indentSize = GetValue(bundle, "indentSize", "2");
+            if (indent == string.Empty && int.TryParse(indentSize, out var _indentSize))
+            {
+                indent = new string(' ', _indentSize);
+            }
+            settings.Indent = indent;
 
             return settings;
         }

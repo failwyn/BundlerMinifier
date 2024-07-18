@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
@@ -13,9 +13,9 @@
 
   <ItemGroup>
     <None Include="artifacts\**\*.json" />
-    <Content Include="artifacts\*.js" />
-    <Content Include="artifacts\*.css" />
-    <Content Include="artifacts\*.html" />
+    <Content Include="artifacts\**\*.js" />
+    <Content Include="artifacts\**\*.css" />
+    <Content Include="artifacts\**\*.html" />
   </ItemGroup>
 
   <ItemGroup>

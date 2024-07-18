@@ -1,0 +1,11 @@
+﻿[
+  {
+    "outputFileName": "bug6.min.css",
+    "inputFiles": [
+      "bug6.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  }
+]

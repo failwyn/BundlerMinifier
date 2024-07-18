@@ -1,0 +1,11 @@
+﻿[
+  {
+    "outputFileName": "bug26.min.js",
+    "inputFiles": [
+      "bug26.js"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  }
+]

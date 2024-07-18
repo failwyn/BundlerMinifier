@@ -1,0 +1,11 @@
+﻿[
+  {
+    "outputFileName": "bug24.min.css",
+    "inputFiles": [
+      "bug24.css"
+    ],
+    "minify": {
+      "enabled": true
+    }
+  }
+]
